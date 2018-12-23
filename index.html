@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="assets/css/reset.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+     <link rel="stylesheet" href="assets/css/style.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+     <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <div class = "container">
+            
+                    <div class="jumbotron">
+                        <div class="container">
+                                <h1 class="display-4" class ="icon"> <h1>Anytime is Train Time <br> Choo Choo. Chee Chee.</h1>
+                            </div>
+                    </div>
+            
+            <div class = "row">
+                <div class = "col-md-12">
+                
+                 <div class="card">
+                        <div class="card-header">
+                          Current Train Schedule
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival</th>
+                                        <th scope="col">Minutes Away</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                 <tr>
+                                    <th scope="row"></th>
+                                     <td id = "employee-rows"></td>
+                                 </tr>
+                            </table>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </br>
+                    <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                                <div class="card-header">Add Train</div>
+                            <div class="card-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        
+                                        <label for="name-input">
+                                            Train Name
+                                        </label>
+                                        <input type="name" class="form-control" id="name-input" />
+                                    </div>
+                                    <div class="form-group">
+                                        
+                                        <label for="dest-input">
+                                            Destination
+                                        </label>
+                                        <input type="role" class="form-control" id="dest-input" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ftrain-input">
+                                            First Train Time (HH:mm - military time)
+                                        </label>
+                                        <input type="start-date" class="form-control" id="ftrain-input" />
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="freq-input">
+                                                Frequency (min)
+                                        </label>
+                                        <input type="rate" class="form-control" id="freq-input" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="submit">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+    <script src = "assets/javascript/apps.js"></script>
+</html>
